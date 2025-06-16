@@ -1,0 +1,8 @@
+<div class="category-container">
+    <h1>Categories</h1>
+   <div class="category-list">
+    <div class="category-item" *ngFor="let category of categoryList" (click)="navigateToCategory(category)">
+        {{category}}
+    </div>
+   </div>
+</div>

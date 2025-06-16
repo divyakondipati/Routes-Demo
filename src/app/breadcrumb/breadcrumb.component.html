@@ -1,0 +1,14 @@
+
+
+<nav class="breadcrumb-wrapper">
+    <ng-container *ngFor="let crumb of breadcrumbs; let last = last">
+      <a
+        class="breadcrumb"
+        [routerLink]="crumb.url"
+        [ngClass]="{ 'active-breadcrumb': crumb.url === currentUrl }"
+        *ngIf="crumb.label"
+      >
+        {{ crumb.label }}
+      </a>
+    </ng-container>
+  </nav>

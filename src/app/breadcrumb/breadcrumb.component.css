@@ -1,0 +1,39 @@
+.breadcrumb-wrapper {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    overflow-x: auto;
+    margin: 30px
+  }
+  
+  .breadcrumb {
+    position: relative;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px 10px 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 10px) 0,
+      100% 50%,
+      calc(100% - 10px) 100%,
+      0 100%,
+      10px 50%
+    );
+    transition: background 0.3s ease;
+  }
+  
+  .breadcrumb:hover {
+    background: #2980b9;
+  }
+  
+  .active-breadcrumb {
+    background: #2ecc71; 
+  }
+  
+  .breadcrumb:last-child {
+    margin-right: 0;
+  }
